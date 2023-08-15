@@ -307,6 +307,65 @@ img {
     padding: 32px 0;
 }
 
+/* SECTION FIVE */
+.section-customers {
+    padding: 120px 0 120px;
+}
+
+.section-customers-title {
+    color: var(--navyblue);
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.section-customers-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 120px;
+    color: var(--lightslate);
+}
+
+.section-customers-link {
+    display: flex;
+    width: 168px;
+    height: 88px;
+    border-radius: 4px;
+    border: 1px solid var(--lightslate);
+    color: var(--lightslate);
+    justify-content: center;
+    align-items: center;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.section-customers-link:hover,
+.section-customers-link:focus {
+    color: var(--ocean);
+    border-color: var(--ocean);
+}
+
+.section-customers-link:hover {
+    color: var(--ocean);
+    border-color: var(--ocean);
+}
+
+
+
+.customers-link-logo {
+    fill: rgba(142, 143, 153, 1);
+    width: 104px;
+    height: 56px;
+    flex-shrink: 0;
+    fill: currentColor;
+
+}
+
 /* main page finish*/
 
 
@@ -386,8 +445,6 @@ img {
 .footer-social-links:focus {
     background-color: var(--green);
 }
-
-
 
 .social-icons-fotter {
     fill: var(--cloud);
@@ -484,6 +541,7 @@ img {
 
 .card-link {
     display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -493,6 +551,52 @@ img {
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
+/* overlay */
+.overlay-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: var(--iris);
+
+}
+
+.overlay-text {
+    color: var(--cloud);
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.2em;
+    padding: 40px 32px;
+
+}
+
+.card-link:hover .overlay,
+.card-link:focus .overlay {
+    transform: translateY(0);
+}
+
+.card-link:hover.overlay-text,
+.card-link:focus.overlay-text {
+    /* При ховері на посилання змінюється стиль transform для параграфа,
+        що знаходиться в контейнері з картинкою. Нове значення якого становить transform: translateY(0%); */
+    transform: translateY(0%)
+}
+
+
+
 
 /* Малюнок фону main*/
 .section-effective {
@@ -553,64 +657,6 @@ img {
 }
 
 
-/* section_5 */
-.section-customers {
-    padding: 120px 0 120px;
-}
-
-.section-customers-title {
-    color: var(--navyblue);
-    text-align: center;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.72px;
-    text-transform: capitalize;
-    margin-bottom: 72px;
-}
-
-.section-customers-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-    margin-bottom: 120px;
-    color: var(--lightslate);
-}
-
-.section-customers-link {
-    display: flex;
-    width: 168px;
-    height: 88px;
-    border-radius: 4px;
-    border: 1px solid var(--lightslate);
-    color: var(--lightslate);
-    justify-content: center;
-    align-items: center;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-
-.section-customers-link:hover,
-.section-customers-link:focus {
-    color: var(--ocean);
-    border-color: var(--ocean);
-}
-
-.section-customers-link:hover {
-    color: var(--ocean);
-    border-color: var(--ocean);
-}
-
-
-
-.customers-link-logo {
-    fill: rgba(142, 143, 153, 1);
-    width: 104px;
-    height: 56px;
-    flex-shrink: 0;
-    fill: currentColor;
-
-}
 
 /* псевдоелемент та підсвітка */
 .nav-list-item {
@@ -644,48 +690,7 @@ img {
 
 
 
-/* overlay */
-.overlay-box {
-    position: relative;
-    overflow: hidden;
-}
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateY(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 100%;
-    height: 100%;
-
-    background: var(--iris);
-
-}
-
-
-
-.overlay-text {
-    color: var(--cloud);
-    font-family: Roboto;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.2em;
-    padding: 40px 32px;
-
-}
-
-.card-link:hover .overlay,
-.card-link:focus .overlay {
-    transform: translateY(0);
-}
 
 /* MODAL */
 
@@ -745,8 +750,6 @@ img {
     cursor: pointer;
     width: 24px;
     height: 24px;
-
-    /* dz */
     border-radius: 50%;
     background-color: #e7e9fc;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -767,3 +770,5 @@ img {
 .modal-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* MODAL finish */
