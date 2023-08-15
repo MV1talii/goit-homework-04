@@ -68,17 +68,18 @@ img {
 
 
 :root {
-    --navyblue: #2E2F42;
-    --slate: #434455;
-    --light-slate: #8e8f99;
-    --navyblue-modal: rgba(46, 47, 66, 0.40);
-    --ocean: #404bbf;
     --iris: #4D5AE5;
-    --white: #FFF;
-    --cloud: #F4F4FD;
-    --dairy: #FCFCFC;
-    --cornflower: #e7e9fc;
+    --ocean: #404BBF;
+    --navyblue: #2E2F42;
     --green: #31D0AA;
+    --slate: #434455;
+    --lightslate: #8E8F99;
+    --cornflower: #E7E9FC;
+    --cloud: #F4F4FD;
+    --navyblue-modal: rgba(46, 47, 66, 0.40);
+    --grey: rgba(46, 47, 66, 0.70);
+    --white: #ffffff;
+    --dairy: #FCFCFC;
 }
 
 /* header */
@@ -120,7 +121,7 @@ img {
 
 .nav-list-item:hover,
 .nav-list-item:focus {
-    color: #404bbf
+    color: var(--ocean);
 }
 
 .nav {
@@ -230,7 +231,6 @@ img {
     letter-spacing: 0.02em;
     color: var(--navyblue);
     margin-bottom: 8px;
-
 }
 
 
@@ -238,7 +238,7 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--slate, #434455);
+    color: var(--slate);
 }
 
 /* SECTION THREE */
@@ -270,7 +270,6 @@ img {
 .section-team {
     background-color: var(--cloud);
     padding: 120px 0;
-
 }
 
 .team-list {
@@ -279,7 +278,7 @@ img {
 }
 
 .team-list-item {
-    background-color: #ffffff;
+    background-color: var(--white);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
         0px 1px 1px 0px rgba(46, 47, 66, 0.16),
         0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -323,7 +322,7 @@ img {
 }
 
 .footer-text {
-    color: var(--cloud, #F4F4FD);
+    color: var(--cloud);
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 264px;
@@ -353,7 +352,7 @@ img {
 }
 
 .social-media {
-    color: #ffffff;
+    color: var(--white);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -388,9 +387,7 @@ img {
     background-color: var(--green);
 }
 
-.footer-social-links:hover {
-    background-color: #31d0aa;
-}
+
 
 .social-icons-fotter {
     fill: var(--cloud);
@@ -452,7 +449,7 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--slate, #434455);
+    color: var(--slate);
     font-weight: 400;
 }
 
@@ -523,7 +520,7 @@ img {
 
 .social-network-icons {
     /* самі іконки */
-    fill: #f4f4fd;
+    fill: var(--cloud);
 }
 
 
@@ -555,13 +552,6 @@ img {
     background-color: var(--ocean);
 }
 
-.social-network-links:hover {
-    /* При ховері на посилання,
-        в класі заданий стиль background-color: #404bbf;
-        для зміни кольору фону при наведені мишкою */
-    background-color: #404bbf;
-    ;
-}
 
 /* section_5 */
 .section-customers {
@@ -569,7 +559,7 @@ img {
 }
 
 .section-customers-title {
-    color: var(--navyblue, #2e2f42);
+    color: var(--navyblue);
     text-align: center;
     font-size: 36px;
     line-height: 1.11;
@@ -584,7 +574,7 @@ img {
     align-items: center;
     gap: 24px;
     margin-bottom: 120px;
-    color: var(--light-slate);
+    color: var(--lightslate);
 }
 
 .section-customers-link {
@@ -592,7 +582,7 @@ img {
     width: 168px;
     height: 88px;
     border-radius: 4px;
-    border: 1px solid var(--light-slate);
+    border: 1px solid var(--lightslate);
     color: var(--lightslate);
     justify-content: center;
     align-items: center;
@@ -607,10 +597,9 @@ img {
 }
 
 .section-customers-link:hover {
-    color: #404bbf;
-    border-color: #404bbf;
+    color: var(--ocean);
+    border-color: var(--ocean);
 }
-
 
 
 
@@ -677,15 +666,14 @@ img {
     width: 100%;
     height: 100%;
 
-    background: var(--iris, #4D5AE5);
-
+    background: var(--iris);
 
 }
 
 
 
 .overlay-text {
-    color: var(--cloud, #F4F4FD);
+    color: var(--cloud);
     font-family: Roboto;
     font-size: 16px;
     line-height: 1.5;
