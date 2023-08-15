@@ -553,12 +553,12 @@ img {
 }
 
 /* overlay */
-.overlay-box {
+.card-link {
     position: relative;
     overflow: hidden;
 }
 
-.overlay {
+.overlay-box {
     position: absolute;
     top: 0;
     left: 0;
@@ -583,8 +583,8 @@ img {
 
 }
 
-.card-link:hover .overlay,
-.card-link:focus .overlay {
+.card-link:hover .overlay-box,
+.card-link:focus .overlay-box {
     transform: translateY(0);
 }
 
